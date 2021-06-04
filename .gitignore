@@ -1,0 +1,13 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/.vs/ToDoListBlazorWasm/config/debuggerConfiguration-37f1fae3-6a1d-4391-9f8b-26858db99f05.json
+/ToDoListApi/bin/Debug/net5.0
+/ToDoListApi/obj
+/ToDoListBlazorWasm/bin/Debug/net5.0
+/ToDoListBlazorWasm/obj/Debug/net5.0/build-gz
+/ToDoListBlazorWasm/obj/Debug/net5.0/RazorDeclaration/ToDoListBlazorWasm.dll
+/ToDoListBlazorWasm/obj/Debug/net5.0/RazorDeclaration/ToDoListBlazorWasm.pdb
+/ToDoListBlazorWasm/obj/Debug/net5.0/ref
+/ToDoListBlazorWasm/obj/Debug/net5.0/staticwebassets

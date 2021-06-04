@@ -4,7 +4,7 @@
 #pragma warning disable 0649
 #pragma warning disable 0169
 
-namespace ToDoListBlazorWasm.Shared
+namespace ToDoListBlazorWasm.Pages
 {
     #line hidden
     using System;
@@ -82,7 +82,8 @@ using ToDoListBlazorWasm.Shared;
 #line default
 #line hidden
 #nullable disable
-    public partial class NavMenu : Microsoft.AspNetCore.Components.ComponentBase
+    [Microsoft.AspNetCore.Components.RouteAttribute("/todoList")]
+    public partial class ToDoList : Microsoft.AspNetCore.Components.ComponentBase
     {
         #pragma warning disable 1998
         protected override void BuildRenderTree(Microsoft.AspNetCore.Components.Rendering.RenderTreeBuilder __builder)
@@ -90,16 +91,9 @@ using ToDoListBlazorWasm.Shared;
         }
         #pragma warning restore 1998
 #nullable restore
-#line 33 "D:\MyWork\BlazorTedu\ToDoListBlazorWasm\ToDoListBlazorWasm\Shared\NavMenu.razor"
+#line 5 "D:\MyWork\BlazorTedu\ToDoListBlazorWasm\ToDoListBlazorWasm\Pages\ToDoList.razor"
        
-    private bool collapseNavMenu = true;
-
-    private string NavMenuCssClass => collapseNavMenu ? "collapse" : null;
-
-    private void ToggleNavMenu()
-    {
-        collapseNavMenu = !collapseNavMenu;
-    }
+    string Name = "TEDU";
 
 #line default
 #line hidden
