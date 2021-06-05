@@ -1,4 +1,5 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -6,7 +7,7 @@ using ToDoListApi.Entities;
 
 namespace ToDoListApi.Data
 {
-    public class ToDoListDbContext : DbContext
+    public class ToDoListDbContext : IdentityDbContext<User, Role, Guid>
     {
         public ToDoListDbContext(DbContextOptions<ToDoListDbContext> options) : base(options)
         {
