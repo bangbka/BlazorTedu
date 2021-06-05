@@ -20,6 +20,7 @@ namespace ToDoListApi.Entities
         public User Assignee { get; set; }
         public Status Status { get; set; }
         public Priority Priority { get; set; }
+        public DateTime CreatedDate { get; set; }
 
     }
 }

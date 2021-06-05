@@ -13,6 +13,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using ToDoListApi.Data;
+using ToDoListApi.Repositories;
 
 namespace ToDoListApi
 {
@@ -37,6 +38,8 @@ namespace ToDoListApi
             {
                 c.SwaggerDoc("v1", new OpenApiInfo { Title = "ToDoListApi", Version = "v1" });
             });
+
+            services.AddTransient<ITaskRepository, TaskRepository>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
